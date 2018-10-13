@@ -11,6 +11,7 @@ let iLLUMINATI = "confirmed"
 let nitefort = true;
 let shellshockers = false;
 let scrumpcuhs;
+
 console.log(num1);
 console.log(num2);
 console.log(tHEDOOR);
