@@ -87,7 +87,7 @@ if(enterHouse == "y" || enterHouse == "yes"){
   else{
     console.log("you decide to leave the boy alone because he looks a littel mentell. As you walk to the door you see a basement that looks very scary.");
     let leave = READLINE.question("do you enter the basement or leave?");
-    if(leave == enter){      
+    if(leave == "enter"){      
       console.log("as you enter the base ment you see a blinding light. Then you notice that you have subbled on the hidden paradise called forbidden place. your eyes slowly agest and you see all of the things you've ever wanted.");
       console.log("----------------------------------------");
       console.log("-----------------The End----------------");
@@ -105,7 +105,7 @@ else{
   player.intellect++;
   console.log(`${player.name} decides not to open the door and instead decides to go home.`);
   console.log("as you reach home your tummy starts to growl.");
-  let food = READLINE.question("what should you eat a bowl of  cerial or ramen noodles?");
+  let food = READLINE.question("what should you eat a bowl of  cereal or ramen noodles?");
   if(food == "ramen noodles" || food == "rm"){
     player.intellect++;
     console.log("you sit down and relax knowing that you will never be alone when ramen is by your side.");
@@ -115,7 +115,7 @@ else{
   }
   else{
     player.intellect--;
-    console.log("you chose cerial knowing that your life will complet.");
+    console.log("you chose cereal knowing that your life will complete.");
     console.log("----------------------------------------");
     console.log("-----------------The End----------------");
     console.log("----------------------------------------");
