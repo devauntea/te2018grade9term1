@@ -1,4 +1,4 @@
-/******************************************************************************
+  /******************************************************************************
                                    firstLast6()
 Instructions:
 Given an array of numbers, return true if 6 appears as either the first or last
@@ -10,11 +10,17 @@ firstLast6([13, 6, 1, 2, 3]) → false
 *******************************************************************************/
 
 function firstLast6(nums) {
+  if(nums[0] == 6 || nums[nums.length-1] == 6){
+    return true;
+  }
+  else{
+    return false;
+  }
 
 }
 
 // Remove comment below to test this function.
-//testFirstLast6();
+testFirstLast6();
 
 /******************************************************************************
                                    midThree()
@@ -32,7 +38,7 @@ function midThree(nums) {
 }
 
 // Remove comment below to test this function.
-//testMidThree();
+testMidThree();
 
 /******************************************************************************
                                    fizzBuzz()
