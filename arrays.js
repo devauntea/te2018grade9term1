@@ -16,7 +16,6 @@ function firstLast6(nums) {
   else{
     return false;
   }
-
 }
 
 // Remove comment below to test this function.
@@ -32,7 +31,7 @@ midThree([1, 2, 3, 4, 5]) → [2, 3, 4]
 midThree([8, 6, 7, 5, 3, 0, 9]) → [7, 5, 3]
 midThree([1, 2, 3]) → [1, 2, 3]
 *******************************************************************************/
-
+s\
 function midThree(nums) {
 
 }

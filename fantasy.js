@@ -11,44 +11,45 @@ let fantasyNameCreator = {
   street: '',
   fantasyName: '',
   getNewFirstName: function(){
-  this.firstName = READLINE.question("what is your first name: ");
-  this.firstName.substring(0,3);
-  this.lastName = READLINE.question("what is your last name: ");
-  this.lastName.substring(0,2);
-  let newFirstName = newFirst + newLast.toLowerCase;
-  return newFirstName;
     /******************************************************************************
       This method returns the user's new first name. To do so, concatenate the
       first 3 letters of their real first name and the first 2 letters of their
       real last name.
     *******************************************************************************/
-
+  
+  this.firstName = READLINE.question("what is your first name: ");
+  this.firstName.substring(0,3);
+  this.lastName = READLINE.question("what is your last name: ");
+  this.lastName.substring(0,2);
+  let newFirstName = this.firstName + this.lastName.toLowerCase;
+  return this.newFirstName;
 
   },
   getNewLastName: function(){
-    this.momMaidenName = READLINE.question("what is your mom's maiden name: ");
-    this.cityBorn = READLINE.question("what city were you born in: ");
-    this.momMaidenName.substring(0,2);
-    this.cityBorn.substring(0,3);
-    let newLastName = newMomName + newCityName.toLowerCase;
-    return newLastName;
     /******************************************************************************
       This method returns the user's new last name. To do so, concatenate the
       first 2 letters of their mom's maiden name and the first 3 letters of the
       city where they were born.
     *******************************************************************************/
-
+    
+    this.momMaidenName = READLINE.question("what is your mom's maiden name: ");
+    this.cityBorn = READLINE.question("what city were you born in: ");
+    this.momMaidenName.substring(0,2);
+    this.cityBorn.substring(0,3);
+    let newLastName = this.momMaidenName + this.cityBorn.toLowerCase;
+    return this.newLastName;
 
   },
   getTitle: function(){
-    this.dreamCar = READLINE.question("what is your dream car: ")
-    this.newlastName.substring(,)
-
     /******************************************************************************
       This method returns the user's title. To do so, concatenate the last three
       letters of their real last name, reversed, and the model of their dream car.
     *******************************************************************************/
-
+ 
+    this.dreamCar = READLINE.question("what is your dream car: ");
+    this.newlastName.substring(-1,-3);
+    let userTitle = this.dreamCar + this.newLastName.toLowerCase;
+    return this.userTitle
 
   },
   getHonorific: function(){
@@ -56,9 +57,11 @@ let fantasyNameCreator = {
       This method returns the user's full honorific. To do so, concatenate their
       title, " of ", and the name of the street they live on.
     *******************************************************************************/
-    this. street = READLINE.question("please enter the street you live on: ")
+
+    this. street = READLINE.question("please enter the street you live on: ");
     this.fantasyName = this.getTitle() + " of " + this.street;
-    return this. fantasyName;
+    return this.fantasyName;
+
   },
 
 }
