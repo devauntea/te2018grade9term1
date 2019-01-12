@@ -21,10 +21,10 @@ let fantasyNameCreator = {
   this.firstName.substring(0,3);
   this.lastName = READLINE.question("what is your last name: ");
   this.lastName.substring(0,2);
-  let newFirstName = this.firstName + this.lastName.toLowerCase;
-  return this.newFirstName;
+  let newFirstName = newFirst + newLast.toLowerCase;
 
   },
+
   getNewLastName: function(){
     /******************************************************************************
       This method returns the user's new last name. To do so, concatenate the
@@ -36,8 +36,7 @@ let fantasyNameCreator = {
     this.cityBorn = READLINE.question("what city were you born in: ");
     this.momMaidenName.substring(0,2);
     this.cityBorn.substring(0,3);
-    let newLastName = this.momMaidenName + this.cityBorn.toLowerCase;
-    return this.newLastName;
+    let newLastName = newMomName + newCityName.toLowerCase;
 
   },
   getTitle: function(){
@@ -48,8 +47,8 @@ let fantasyNameCreator = {
  
     this.dreamCar = READLINE.question("what is your dream car: ");
     this.newlastName.substring(-1,-3);
-    let userTitle = this.dreamCar + this.newLastName.toLowerCase;
-    return this.userTitle
+    let userTitle = dreamCar + newLastName.toLowerCase;
+    
 
   },
   getHonorific: function(){
@@ -58,9 +57,9 @@ let fantasyNameCreator = {
       title, " of ", and the name of the street they live on.
     *******************************************************************************/
 
-    this. street = READLINE.question("please enter the street you live on: ");
-    this.fantasyName = this.getTitle() + " of " + this.street;
-    return this.fantasyName;
+    this.street = READLINE.question("please enter the street you live on: ");
+    let honorific = this.getTitle() + " of " + this.street;
+    
 
   },
 
@@ -80,6 +79,8 @@ let fantasyNameCreator = {
 *******************************************************************************/
 
 function run() {
+ this.fantasyName = newFirst + newLast + userTitle + honorific;
+ return this.fantasyName
 
 }
 
