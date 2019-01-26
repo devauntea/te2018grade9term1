@@ -22,3 +22,9 @@ this.firstName = READLINE.question("what is your first name: ");
     this.cityBorn.substring(0,3);
     let newLastName = newMomName + newCityName.toLowerCase;
     return newLastName;
+
+
+    let sport = READLINE.question("what is your favorit sport");
+  let food = READLINE.question("what is your favorit meal");
+  let career = READLINE.question("what is your dream career");
+  let car = READLINE.question("what is the name of your dream car");
